@@ -221,13 +221,14 @@ def big_shoe_rebounds
           
          element.find_all do |shoe|
            big_shoe = element[:shoe]
-           binding.pry
+           
        end
       
       end
     end
   end
   big_shoe
+  binding.pry
 end
 
 

@@ -228,7 +228,7 @@ def big_shoe_rebounds
       end
     end
   big_shoe = shoe_rebounds.max_by(&:first)
-  big_shoe.each do |rebound|
+  big_shoe.each_value do |rebound|
   binding.pry
   end
 end

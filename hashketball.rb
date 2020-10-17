@@ -206,7 +206,7 @@ def player_stats(name)
         player = value[:players]
         #if player[:name] == name
         player.each do |element|
-         player_stats << element
+         player_stats += element
          binding.pry
         #end
       end

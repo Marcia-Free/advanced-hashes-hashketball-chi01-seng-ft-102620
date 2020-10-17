@@ -183,18 +183,16 @@ def player_numbers(team_name)
   
   game_hash.each do |key_home, value|
     value.find do
+      
       if value[:team_name] == team_name
-  
-        test1 = value[:players][0]
         player = value[:players]
-        
         player.each do |element|
+          test1 = element[:number]
+          jersey_n_array << value[:team_name][]
           binding.pry
         end
-        
-        #jersey_n_array << value[:team_name][]
-        binding.pry
       end
+      
     end
   end
     jersey_n_array

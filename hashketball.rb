@@ -207,7 +207,6 @@ def player_stats(name)
          #player_stats.collect do
            player_stats[element]
          binding.pry
-        end
       end
       
     end

@@ -198,7 +198,7 @@ end
 
 
 def player_stats(name)
-      #player_stats = {}
+      player_stats = {}
   
   game_hash.each do |key_home, value|
     value.find do

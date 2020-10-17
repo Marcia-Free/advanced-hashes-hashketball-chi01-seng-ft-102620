@@ -204,11 +204,11 @@ def player_stats(name)
     value.find do
       
         player = value[:players]
-        if player[:name] == name
+        #if player[:name] == name
         player.each do |element|
          player_stats << element
          binding.pry
-        end
+        #end
       end
       
     end

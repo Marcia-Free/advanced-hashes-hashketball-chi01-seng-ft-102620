@@ -187,7 +187,10 @@ def player_numbers(team_name)
   
         test1 = value[:players][0]
         player = value[:players]
+        
         player.each do |element|
+          binding.pry
+        end
         
         #jersey_n_array << value[:team_name][]
         binding.pry

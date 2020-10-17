@@ -178,7 +178,21 @@ def team_names
 end
 
 
-def player_numbers
+def player_numbers(team_name)
+    jersey_n_array = []
+  
+  game_hash.each do |key_home, value|
+    value.find do
+      if value[:team_name] == team_name
+        
+        test1 = value[:team_name]
+        #jersey_n_array << value[:team_name][]
+        binding.pry
+      end
+    end
+  end
+    jersey_n_array
+    binding.pry
 end
 
 def player_stats

@@ -198,7 +198,7 @@ end
 
 
 def player_stats(name)
-      player_stats = {}
+      #player_stats = {}
   
   game_hash.each do |key_home, value|
     value.find do
@@ -206,7 +206,7 @@ def player_stats(name)
       player.each do |element|
           
           if element[:name] == name
-           returnplayer_stats = element
+           player_stats = {element}
          #binding.pry
        end
       end

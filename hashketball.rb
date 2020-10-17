@@ -203,12 +203,12 @@ def player_stats(name)
   game_hash.each do |key_home, value|
     value.find do
         player = value[:players]
-        player.each do |element|
+      player.each do |element|
           
-          test1 = element[0]
-           test2 = element[:blocks]
-           #player_stats[element]
+          if element[:name] == name
+           player_stats[element]
          binding.pry
+       end
       end
       
     end

@@ -202,8 +202,7 @@ def player_stats(name)
   
   game_hash.each do |key_home, value|
     value.find do
-      player = value[:players]
-      player.each do |element|
+      value[:players].each do |element|
           
           if element[:player_name] == name
            player_stats = element

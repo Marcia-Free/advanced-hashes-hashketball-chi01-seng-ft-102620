@@ -186,6 +186,7 @@ def player_numbers(team_name)
       if value[:team_name] == team_name
         
         test1 = value[:players][:points]
+        test2 = value[:players]
         #jersey_n_array << value[:team_name][]
         binding.pry
       end

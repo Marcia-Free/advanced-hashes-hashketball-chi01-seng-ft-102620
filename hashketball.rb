@@ -221,7 +221,7 @@ def big_shoe_rebounds
       value[:players].each do |element|
           
          element.find_all do |shoe|
-           big_shoe = {element[:shoe] => element[:rebounds]}
+           big_shoe += {element[:shoe] => element[:rebounds]}
        end
       
       end

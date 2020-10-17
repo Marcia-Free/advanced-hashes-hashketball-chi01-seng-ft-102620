@@ -204,9 +204,10 @@ def player_stats(name)
     value.find do
         player = value[:players]
         player.each do |element|
-         #player_stats.collect do
-           player_stats[element]
-         #binding.pry
+          
+          test1 = element[0]
+           #player_stats[element]
+         binding.pry
       end
       
     end

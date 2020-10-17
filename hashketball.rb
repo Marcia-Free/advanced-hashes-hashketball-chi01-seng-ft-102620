@@ -187,9 +187,8 @@ def player_numbers(team_name)
       if value[:team_name] == team_name
         player = value[:players]
         player.each do |element|
-          test1 = element[:number]
-          #jersey_n_array << value[:team_name][]
-          binding.pry
+          jersey_n_array << element[:number]
+          #binding.pry
         end
       end
       

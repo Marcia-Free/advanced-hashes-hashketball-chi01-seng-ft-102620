@@ -219,9 +219,8 @@ def big_shoe_rebounds
     value.find do
       value[:players].each do |element|
           
-          shoe_size = element[:shoe]
-         shoe_size.find do |shoe|
-           big_shoe = shoe.max
+         element.find do |shoe|
+           big_shoe = element[:shoe].max
            binding.pry
        end
        

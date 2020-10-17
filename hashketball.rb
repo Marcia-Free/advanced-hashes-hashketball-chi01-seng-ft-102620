@@ -206,10 +206,11 @@ def player_stats(name)
       player.each do |element|
           
           if element[:name] == name
-           return element
+           returnplayer_stats = element
+         #binding.pry
        end
-       
       end
+      
     end
   end
 

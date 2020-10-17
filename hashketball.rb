@@ -221,8 +221,10 @@ def big_shoe_rebounds
       value[:players].each do |element|
           
           element[:shoe].max do
-           player_stats = element
+           big_shoe = element
+           binding.pry
        end
+       
       end
     end
   end

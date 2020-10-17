@@ -215,14 +215,13 @@ end
 
 
 def big_shoe_rebounds
-  
   game_hash.each do |key_home, value|
     value.find do
       value[:players].each do |element|
           
           shoe_size = element[:shoe]
-         shoe_size.max_by do
-           big_shoe = element
+         shoe_size.each do |shoe|
+           #big_shoe = element
            binding.pry
        end
        

@@ -206,6 +206,7 @@ def player_stats(name)
         player.each do |element|
           
           test1 = element[0]
+           test2 = element[:blocks]
            #player_stats[element]
          binding.pry
       end

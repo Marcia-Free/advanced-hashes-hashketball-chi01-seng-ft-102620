@@ -220,7 +220,7 @@ def big_shoe_rebounds
     value.find do
       value[:players].each do |element|
           
-          element[:shoe].max 
+          element[:shoe].max do
            player_stats = element
        end
       end

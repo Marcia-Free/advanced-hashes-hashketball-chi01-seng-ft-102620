@@ -169,6 +169,7 @@ def team_names
   
   game_hash.each do |key_home, value|
     value.find do
+      
       if value[:team_name]
         team_n_array << value[:team_name]
       end
@@ -194,6 +195,7 @@ def player_numbers(team_name)
   end
     jersey_n_array
 end
+
 
 def player_stats
 end

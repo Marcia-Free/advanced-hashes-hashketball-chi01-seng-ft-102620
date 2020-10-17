@@ -219,7 +219,7 @@ def big_shoe_rebounds
     value.find do
       value[:players].each do |element|
           
-         element.find do |shoe|
+         element.find_all do |shoe|
            big_shoe = element[:shoe]
            binding.pry
        end

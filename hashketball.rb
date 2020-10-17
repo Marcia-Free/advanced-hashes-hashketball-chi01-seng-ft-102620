@@ -209,7 +209,7 @@ def player_stats(name)
          player_stats.collect do
            element
          binding.pry
-        #end
+        end
       end
       
     end

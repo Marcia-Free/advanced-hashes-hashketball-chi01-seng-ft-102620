@@ -227,6 +227,7 @@ def big_shoe_rebounds
       end
     end
   end
+    if
   big_shoe
   binding.pry
 end

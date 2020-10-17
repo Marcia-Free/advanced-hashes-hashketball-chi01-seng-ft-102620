@@ -215,13 +215,13 @@ end
 
 
 def big_shoe_rebounds
-  big_shoe = ""
+  big_shoe = {""}
   game_hash.each do |key_home, value|
     value.find do
       value[:players].each do |element|
           
          element.find_all do |shoe|
-           big_shoe += element[:shoe]
+           big_shoe = element[:shoe]
        end
       
       end

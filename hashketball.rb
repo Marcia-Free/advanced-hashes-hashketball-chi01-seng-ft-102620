@@ -188,14 +188,11 @@ def player_numbers(team_name)
         player = value[:players]
         player.each do |element|
           jersey_n_array << element[:number]
-          #binding.pry
         end
       end
-      
     end
   end
     jersey_n_array
-    binding.pry
 end
 
 def player_stats

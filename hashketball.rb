@@ -206,7 +206,7 @@ def player_stats(name)
         player.each do |element|
          #player_stats.collect do
            player_stats[element]
-         binding.pry
+         #binding.pry
       end
       
     end

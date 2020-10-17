@@ -207,7 +207,7 @@ def player_stats(name)
           
           if element[:name] == name
            player_stats = element
-         binding.pry
+         #binding.pry
        end
       end
       

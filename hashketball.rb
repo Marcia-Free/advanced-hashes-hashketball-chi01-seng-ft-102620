@@ -220,7 +220,7 @@ def big_shoe_rebounds
       value[:players].each do |element|
           
          element.find do |shoe|
-           big_shoe = element[:shoe].max
+           big_shoe = element[:shoe]
            binding.pry
        end
        

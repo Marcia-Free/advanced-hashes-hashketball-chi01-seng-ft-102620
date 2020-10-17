@@ -207,13 +207,11 @@ def player_stats(name)
           
           if element[:player_name] == name
            player_stats = element
-         binding.pry
        end
-       
       end
     end
   end
-
+  player_stats
 end
 
 

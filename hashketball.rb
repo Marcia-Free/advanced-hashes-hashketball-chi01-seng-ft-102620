@@ -215,6 +215,18 @@ end
 
 
 def big_shoe_rebounds
+  
+  game_hash.each do |key_home, value|
+    value.find do
+      value[:players].each do |element|
+          
+          element[:shoe].max 
+           player_stats = element
+       end
+      end
+    end
+  end
+  
 end
 
 

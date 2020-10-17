@@ -222,16 +222,15 @@ def big_shoe_rebounds
           
          element.find do |shoe|
            shoe_rebounds<<{element[:shoe] => element[:rebounds]}
-       end
+          end
       
+        end
       end
     end
-  end
   big_shoe = shoe_rebounds.max_by(&:first)
   big_shoe.each do |rebound|
-    return rebound
   binding.pry
-end
+  end
 end
 
 

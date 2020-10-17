@@ -221,14 +221,13 @@ def big_shoe_rebounds
       value[:players].each do |element|
           
          element.find do |shoe|
-           big_shoe<<{element[:shoe] => element[:rebounds]}
+           shoe_rebounds<<{element[:shoe] => element[:rebounds]}
        end
       
       end
     end
   end
-    if
-  big_shoe
+  big_shoe = shoe_rebounds.max
   binding.pry
 end
 

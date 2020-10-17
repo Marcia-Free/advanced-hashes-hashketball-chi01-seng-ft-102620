@@ -185,7 +185,7 @@ def player_numbers(team_name)
     value.find do
       if value[:team_name] == team_name
         
-        test1 = value[:players][0]
+        test1 = value[:players][0][0]
         test2 = value[:players]
         #jersey_n_array << value[:team_name][]
         binding.pry

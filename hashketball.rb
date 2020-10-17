@@ -128,5 +128,66 @@ def game_hash
   }
 end
 
-# Write code here
-game_hash[:home][:team_name]
+#--------------------------------------CODE-BELOW--------------------------------------
+def num_points_scored(player)
+  
+  game_hash.each do |key_home, value|
+    value[:players].each do |player_element|
+
+      if player_element[:player_name] == player
+        return player_element[:points]
+      end
+    end
+  end
+end
+
+
+def shoe_size(player)
+  game_hash.each do |key_home, value|
+    value[:players].each do |player_element|
+
+      if player_element[:player_name] == player
+        return player_element[:shoe]
+      end
+    end
+  end
+end
+
+
+def team_colors(team_name)
+    game_hash.each do |key_home, value|
+
+      if value[:team_name] == team_name
+        return value[:colors]
+      end
+  end
+end
+
+
+def team_names
+  team_n_array = []
+  
+  game_hash.each do |key_home, value|
+    value.find do
+      if value[:team_name]
+        team_n_array << value[:team_name]
+      end
+    end
+  end
+    team_n_array
+end
+
+
+
+def player_numbers
+end
+
+def player_stats
+end
+
+
+def big_shoe_rebounds
+end
+
+
+
